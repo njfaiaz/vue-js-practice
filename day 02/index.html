@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="vue.global.js"></script>
+    <title>Cdn Vue js install</title>
+</head>
+<body>
+    <header> Vue js Bangla </header>
+    
+
+    <div id="app"> 
+         <h3> Welcome To {{ tutorialInfo.name }}</h3> <!-- string interpolation bole  ei vabe data dekhanu ke -->
+        <p> Github Link </p>
+        <!-- <a v-bind:href="tutorialInfo.githubLink ">Github</a>  attribute binding ei vabe kora hoy -->
+
+        <a :href="tutorialInfo.githubLink ">Github</a> <!--  attribute binding ei vabe kora hoy eta shortcut -->
+
+        <br>
+        <br>
+
+        <p v-html="htmlCode">  <!--  shudhu Code dekhabe -->
+            
+        </p>
+
+        {{ htmlCode }} <!--  Value soho sob kichu dekhabe -->
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
